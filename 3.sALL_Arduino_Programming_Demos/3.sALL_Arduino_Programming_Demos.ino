@@ -14,86 +14,90 @@ To comment out a block of code put the submols you see on line 1, where the comm
 
 //Slide 3
 
-/*
-void setup() {
-    pass
-}
 
-void loop() {
-  pass
-}
+// void setup() {
+//     pinMode(13, OUTPUT); 
+//     pinMode(12, OUTPUT); 
+// }
 
-*/
+// void loop() {
+//   digitalWrite(13, HIGH);
+//   delay(1000);
+//   digitalWrite(13, LOW);
+//   delay(1000);
+// }
+
+
 
 // .......................................................................................................
 
 
 //Slide 7
 
-/*
-pass
-pass
+// int ledPin = 13;
+// int delayTime = 1000
 
-void setup() {
-    pinMode(pass, OUTPUT);
-}
+// void setup() {
+//     pinMode(ledPin, OUTPUT);
+// }
 
-void loop() {
-    digitalWrite(pass, HIGH);
-    delay(pass);
-    digitalWrite(pass, LOW);
-    delay(pass);
-}
+// void loop() {
+//     digitalWrite(ledPin, HIGH);
+//     delay(delayTime);
+//     digitalWrite(ledPins, LOW);
+//     delay(delayTime);
+// }
 
-*/
 
 // .......................................................................................................
 
 //Slide 8
 
-/*
-pass
 
-void setup() {
-    Serial.begin(9600);
+// char inputChar = 'X'
 
-    if (inputChar == 'X') {
-        Serial.println("The character is X.");
-    } else {
-        Serial.println("The character is not X.");
-    }
-}
+// void setup() {
+//     Serial.begin(9600);
 
-void loop() {
-    // Empty loop
-}
+//     if (inputChar == 'X') {
+//         Serial.println("The character is X.");
+//     } else {
+//         Serial.println("The character is not X.");
+//     }
+// }
 
-*/
+// void loop() {
+//     // Empty loop
+// }
+
+
 
 // .......................................................................................................
 
 //Slide 9
-/*
-pass
-pass
 
-void setup() {
-    pinMode(LED_PIN, OUTPUT);
-}
 
-void loop() {
-    digitalWrite(LED_PIN, HIGH);
-    delay(delay_time);
-    digitalWrite(LED_PIN, LOW);
-    delay(delay_time);
-}
-*/
+// #define LED_PIN 13 
+// const int delay_time = 500;
+
+// void setup() {
+//     pinMode(LED_PIN, OUTPUT);
+// }
+
+// void loop() {
+//     digitalWrite(LED_PIN, HIGH);
+//     delay(delay_time);
+//     digitalWrite(LED_PIN, LOW);
+//     delay(delay_time);
+// }
+
+
 
 // .......................................................................................................
 
-//Slide 11
+// Slide 11
 
-/*
+
 const int buttonPin = 2;
 const int ledPin = 13;
 
@@ -104,10 +108,15 @@ void setup() {
 
 void loop() {
 
-    pass
-
+    if (digitalRead(buttonPin) == HIGH) {
+      digitalWrite(ledPin, HIGH);
+    }
+    
+    else {
+      digitalWrite(ledPin, LOW);
+    }
 }
-*/
+
 
 // .......................................................................................................
 
