@@ -98,106 +98,105 @@ To comment out a block of code put the submols you see on line 1, where the comm
 // Slide 11
 
 
-const int buttonPin = 2;
-const int ledPin = 13;
+// const int buttonPin = 2;
+// const int ledPin = 13;
 
-void setup() {
-    pinMode(buttonPin, INPUT);
-    pinMode(ledPin, OUTPUT);
-}
+// void setup() {
+//     pinMode(buttonPin, INPUT);
+//     pinMode(ledPin, OUTPUT);
+// }
 
-void loop() {
+// void loop() {
 
-    if (digitalRead(buttonPin) == HIGH) {
-      digitalWrite(ledPin, HIGH);
-    }
+//     if (digitalRead(buttonPin) == HIGH) {
+//       digitalWrite(ledPin, HIGH);
+//     }
     
-    else {
-      digitalWrite(ledPin, LOW);
-    }
-}
+//     else {
+//       digitalWrite(ledPin, LOW);
+//     }
+// }
 
 
 // .......................................................................................................
 
 //Slide 13
 
-/*
-const int ledPin = 13;
-int repeat_blink = 5;
 
-void setup() {
-    pinMode(ledPin, OUTPUT);
-}
+// const int ledPin = 13;
+// int repeat_blink = 5;
 
-void loop() {
-    pass {
-        digitalWrite(ledPin, HIGH);
-        delay(500);
-        digitalWrite(ledPin, LOW);
-        delay(500);
-    }
-    delay(2000);  // Pause before the next set of blinks
-}
+// void setup() {
+//     pinMode(ledPin, OUTPUT);
+// }
 
-*/
+// void loop() {
+  
+//     for (int i = 0; i < repeat_blink; i++) {
+//         digitalWrite(ledPin, HIGH);
+//         delay(500);
+//         digitalWrite(ledPin, LOW);
+//         delay(500);
+//     }
+//     delay(2000);  // Pause before the next set of blinks
+// }
+
 
 // .......................................................................................................
 
 //Slide 14
 
-/*
-const int ledPin = 13;     // LED connected to pin 13
-const int buttonPin = 2;   // Button connected to pin 2
 
-void setup() {
-    pinMode(ledPin, OUTPUT);     // Set the LED pin as output
-    pinMode(buttonPin, INPUT);   // Set the button pin as input
-}
+// const int ledPin = 13;     // LED connected to pin 13
+// const int buttonPin = 2;   // Button connected to pin 2
 
-void loop() {
-    pass { // Enter the loop if the button is pressed
+// void setup() {
+//     pinMode(ledPin, OUTPUT);     // Set the LED pin as output
+//     pinMode(buttonPin, INPUT);   // Set the button pin as input
+// }
 
-        digitalWrite(ledPin, HIGH);          // Turn the LED on
-        delay(500);                          // Wait for 500ms
-        digitalWrite(ledPin, LOW);           // Turn the LED off
-        delay(500);                          // Wait for 500ms
-    }
+// void loop() {
+//     while (digitalRead(buttonPin) == HIGH) { // Enter the loop if the button is pressed
 
-    digitalWrite(ledPin, LOW);         // Ensure LED is off when the button is released
-}
+//         digitalWrite(ledPin, HIGH);          // Turn the LED on
+//         delay(500);                          // Wait for 500ms
+//         digitalWrite(ledPin, LOW);           // Turn the LED off
+//         delay(500);                          // Wait for 500ms
+//     }
 
-*/
+//     digitalWrite(ledPin, LOW);         // Ensure LED is off when the button is released
+// }
+
 
 // .......................................................................................................
 
 //Slide 15
 
-/*
 
-pass // Define pins for LEDs
 
-void setup() {
-    for (int i = 0; i < 3; i++) {
-        pinMode(pass); // Set each LED pin as output
-    }
-}
+// int leds[] = {3,5,6} // Define pins for LEDs
 
-void loop() {
-    for (int i = 0; i < 3; i++) {
-        digitalWrite(pass); // Turn each LED on
-        delay(500);
-        digitalWrite(pass);  // Turn each LED off
-    }
-}
+// void setup() {
+//     for (int i = 0; i < 3; i++) {
+//         pinMode(leds[i], OUTPUT); // Set each LED pin as output
+//     }
+// }
 
-*/
+// void loop() {
+//     for (int i = 0; i < 3; i++) {
+//         digitalWrite(leds[i], HIGH); // Turn each LED on
+//         delay(500);
+//         digitalWrite(leds[i], LOW);  // Turn each LED off
+//     }
+// }
+
+
 
 // .......................................................................................................
 
 //Slide 18
 
-/*
+
 int ledPin = 13;
 
 void setup() {
@@ -205,11 +204,20 @@ void setup() {
 }
 
 void loop() {
-    pass; // Blink LED 3 times
+    blinkLED(ledPin, 3); // Blink LED 3 times
     delay(2000);
+    blinkLED(ledPin, 6)
 }
 
-pass {
+void blinkLED (int pin, int times) {
+    for (int i = 0; i < times; i++) {
+        digitalWrite(pin, HIGH);
+        delay(500);
+        digitalWrite(pin, LOW);
+        delay(500);
+    }
+
+    void blinkLED2 (int pin, int times) {
     for (int i = 0; i < times; i++) {
         digitalWrite(pin, HIGH);
         delay(500);
@@ -218,7 +226,7 @@ pass {
     }
 }
 
-*/
+
 
 
 
